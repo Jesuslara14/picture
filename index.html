@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: auto auto auto 
+                                auto auto auto 
+                                auto auto auto 
+                                auto auto auto 
+                                auto auto auto 
+                                auto ;
+            grid-template-columns: auto auto auto auto auto;
+            width: 600px;
+            height: 700px;
+            border: 1px gray solid;
+            grid-gap: 5px;
+            padding: 5px;
+        }
+
+        .item{
+            border: 1px gray solid;
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+        }
+
+        .item:hover{
+            scale: 110%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item" style="grid-column: 1/ span 4; grid-row: 1/ span 4; background-image: url('ce_logo.png');"></div>
+        <div class="item" style="background-image: url('ce_image01.png');"></div>
+        <div class="item" style="background-image: url('ce_image02.png');"></div>
+        <div class="item" style="grid-column: 5/ span 1; grid-row: 3/ span 2; background-image: url('ce_image03.png');"></div>
+        <div class="item" style="grid-column: 1/ span 2; grid-row: 5/ span 4; background-image: url('ce_image04.png');"></div>
+        <div class="item" style="grid-column: 3/ span 1; grid-row: 5/ span 4; background-image: url('ce_image05.png');"></div>
+        <div class="item" style="grid-column: 4/ span 1; grid-row: 5/ span 4; background-image: url('ce_image06.png');"></div>
+        <div class="item" style="grid-column: 5/ span 1; grid-row: 5/ span 4; background-image: url('ce_image07.png');"></div>
+        <div class="item" style="grid-column: 1/ span 1; grid-row: 9/ span 5; background-image: url('ce_image08.png');"></div>
+        <div class="item" style="grid-column: 2/ span 2; grid-row: 9/ span 3; background-image: url('ce_image09.png');"></div>
+        <div class="item" style="grid-column: 4/ span 1; grid-row: 9/ span 3; background-image: url('ce_image10.png');"></div>
+        <div class="item" style="grid-column: 5/ span 1; grid-row: 9/ span 3; background-image: url('ce_image11.png');"></div>
+        <div class="item" style="grid-column: 1/ span 1; grid-row: 14/ span 2; background-image: url('ce_image12.png');"></div>
+        <div class="item" style="grid-column: 2/ span 1; grid-row: 12/ span 4; background-image: url('ce_image13.png');"></div>
+        <div class="item" style="grid-column: 3/ span 2; grid-row: 12/ span 2; background-image: url('ce_image14.png');"></div>
+        <div class="item" style="grid-column: 3/ span 1; grid-row: 14/ span 2; background-image: url('ce_image15.png');"></div>
+        <div class="item" style="grid-column: 4/ span 1; grid-row: 14/ span 2; background-image: url('ce_image16.png');"></div>
+        <div class="item" style="grid-column: 5/ span 1; grid-row: 14/ span 2; background-image: url('ce_image17.png');"></div>
+        <div class="item" style="grid-column: 5/ span 1; grid-row: 12/ span 2; background-image: url('ce_image18.png');"></div>
+        <div class="item" style="grid-column: 1/ span 1; grid-row: 16/ span 2; background-image: url('ce_image19.png');"></div>
+        <div class="item" style="grid-column: 2/ span 2; grid-row: 16/ span 2; background-image: url('ce_image20.png');"></div>
+    </div>
+</body>
+</html>
